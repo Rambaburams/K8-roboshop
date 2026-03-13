@@ -23,7 +23,7 @@ spec:
     spec: 
       containers:
         - name: redis
-          image: joindevops/redis:v1
+          image: redis:7.0
           imagePullPolicy: Always
           ports:
           - containerPort: 6379
