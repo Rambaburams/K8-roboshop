@@ -45,7 +45,7 @@ apiVersion: v1
 kind: Service 
 metadata:
   name: cart 
-  project: roboshop
+  namespace: roboshop
 spec:
   selector:
     project: roboshop
