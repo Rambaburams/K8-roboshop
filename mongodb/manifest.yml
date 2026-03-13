@@ -7,20 +7,20 @@ metadata:
   labels:
     project: roboshop
     component: mongodb
-    tier: de
+    tier: db
 spec:
   replicas: 1
   selector:
     matchlabels:
-    project: roboshop
-    component: mongodb
-    tier: de
+      project: roboshop
+      component: mongodb
+      tier: db
   template:
     metadata:
       labels:
         project: roboshop
         component: mongodb
-        tier: de
+        tier: db
     spec:
       containers:
       - name: mongodb
@@ -53,7 +53,7 @@ spec:
   ports:
     - protocol: TCP 
       port: 27017
-      targetport: 27017
+      targetPort: 27017
 
 
   
